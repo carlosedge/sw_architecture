@@ -1,7 +1,7 @@
 ﻿namespace FactoryMethod
 {
     /// <summary>
-    /// This class is a service
+    /// This class is a service that test the factory method pattern.
     /// </summary>
     internal class CarService
     {
