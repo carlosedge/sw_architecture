@@ -5,7 +5,7 @@
     /// </summary>
     internal class CarService
     {
-        ICarFactory defaultCarFactory;
+        private ICarFactory defaultCarFactory;
 
         /// <summary>
         /// Creates a new instance of the <see cref="CarService"/> class.
