@@ -5,11 +5,13 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{BA8B7537-0092-4AF6-BE19-239F7E6E9845}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{0CA7BF03-8C99-4E37-B35B-9B8D018FB54E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{0CA7BF03-8C99-4E37-B35B-9B8D018FB54E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{86C20545-6A4D-46CA-8C15-67108059A6C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{86C20545-6A4D-46CA-8C15-67108059A6C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{E4821666-6027-46CA-94D1-F43800673ED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{E4821666-6027-46CA-94D1-F43800673ED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy\Strategy.csproj", "{6810ED1E-80A9-45D1-8029-7BCC8C771441}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{E4821666-6027-46CA-94D1-F43800673ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4821666-6027-46CA-94D1-F43800673ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4821666-6027-46CA-94D1-F43800673ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6810ED1E-80A9-45D1-8029-7BCC8C771441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6810ED1E-80A9-45D1-8029-7BCC8C771441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6810ED1E-80A9-45D1-8029-7BCC8C771441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6810ED1E-80A9-45D1-8029-7BCC8C771441}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{0CA7BF03-8C99-4E37-B35B-9B8D018FB54E} = {BA8B7537-0092-4AF6-BE19-239F7E6E9845}
 		{86C20545-6A4D-46CA-8C15-67108059A6C9} = {BA8B7537-0092-4AF6-BE19-239F7E6E9845}
 		{E4821666-6027-46CA-94D1-F43800673ED4} = {BA8B7537-0092-4AF6-BE19-239F7E6E9845}
+		{6810ED1E-80A9-45D1-8029-7BCC8C771441} = {BA8B7537-0092-4AF6-BE19-239F7E6E9845}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A1987BBF-C587-4F81-AD26-13BBB8A61B94}
