@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Builder
+namespace Decorator
 {
     /// <summary>
     /// Class that defines a car 
@@ -9,14 +9,6 @@ namespace Builder
     /// </summary>
     public class Car
     {
-        /// <summary>
-        /// Generates a new instance of the <see cref="Car"/> class.
-        /// </summary>
-        internal Car()
-        {
-
-        }
-
         /// <summary>
         /// The list of extras.
         /// </summary>
