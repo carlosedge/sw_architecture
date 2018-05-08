@@ -10,7 +10,7 @@ namespace Builder
     public class Car
     {
         /// <summary>
-        /// Generates a new instance of the <see cref="Car"/> class.
+        /// Initializes a new instance of the <see cref="Car"/> class.
         /// </summary>
         internal Car()
         {

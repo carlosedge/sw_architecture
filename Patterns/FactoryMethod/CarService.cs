@@ -8,7 +8,7 @@
         private ICarFactory defaultCarFactory;
 
         /// <summary>
-        /// Creates a new instance of the <see cref="CarService"/> class.
+        /// Initializes a new instance of the <see cref="CarService"/> class.
         /// </summary>
         /// <param name="defaultCarFactory">The default car factory.</param>
         public CarService(ICarFactory defaultCarFactory)

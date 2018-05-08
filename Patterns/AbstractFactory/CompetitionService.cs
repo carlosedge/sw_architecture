@@ -10,7 +10,7 @@
         private ICompetitionFactory competitionFactory;
 
         /// <summary>
-        /// Creates a new instance of the <see cref="CompetitionService"/> class.
+        /// Initializes a new instance of the <see cref="CompetitionService"/> class.
         /// </summary>
         /// <param name="competitionFactory">The competition factory implementation used.</param>
         public CompetitionService(ICompetitionFactory competitionFactory)
