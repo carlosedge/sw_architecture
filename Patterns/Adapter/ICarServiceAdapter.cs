@@ -1,4 +1,6 @@
-﻿namespace Adapter
+﻿using System.Collections.Generic;
+
+namespace Adapter
 {
     /// <summary>
     /// Interface for the car service adaptare.
@@ -8,12 +10,10 @@
     public interface ICarServiceAdapter
     {
         /// <summary>
-        /// returns a string that contains a list of rental cars that meet a specific criteria.
+        /// returns a string that contains a list of rental cars .
         /// </summary>
-        /// <param name="numberOfDoors">The number of doors required.</param>
-        /// <param name="rentalPrice">The rental price required.</param>
-        /// <param name="trunkCapacity">The trunk capacity.</param>
-        /// <returns>A string containing the list of available cars.</returns>
-        string GetRentalCar(int numberOfDoors, decimal rentalPrice, int trunkCapacity);
+        /// <param name="cars">The car list.</param>
+        /// <returns>The car list in string format.</returns>
+        string GetRentalCar(List<Car> cars);
     }
 }

@@ -10,31 +10,12 @@
     /// </summary>
     public class CarJsonAdapter : ICarServiceAdapter
     {
-        private ICarRepository carRepository;
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CarJsonAdapter"/> class.
-        /// </summary>
-        /// <param name="carRepository">The repository.</param>
-        public CarJsonAdapter(ICarRepository carRepository)
-        {
-            this.carRepository = carRepository;
-        }
 
         /// <inheritdoc></inheritdoc>
-        public string GetRentalCar( int numberOfDoors, decimal rentalPrice, int trunkCapacity)
-        {
-            CarSearchCriteria criteria = new CarSearchCriteria
-            {
-                NumberOfDoors = numberOfDoors,
-                RentalPrice = rentalPrice,
-                TrunkCapacity = trunkCapacity
-            };
-
-            List<Car> result = this.carRepository.GetCars(criteria);
-
-            return result != null 
-                ? JsonConvert.SerializeObject(result)
+        public string GetRentalCar(List<Car> cars)
+        {          
+            return cars != null 
+                ? JsonConvert.SerializeObject(cars)
                 : string.Empty;
         }
     }
