@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Queueing.Interfaces;
 using QueueingRabbitMQ;
+using QueueingRabbitMQ.Handlers;
 using System;
 
 namespace QueueingExampleConsoleClient
@@ -13,6 +14,7 @@ namespace QueueingExampleConsoleClient
             
             //setup our DI
             var serviceProvider = new ServiceCollection()
+                .AddTransient<IRabbitBasicConsumerHandler, RabbitBasicConsumerHandler>()
                 .AddSingleton<IConsumer, RabbitConsumer>()
                 .BuildServiceProvider();
 

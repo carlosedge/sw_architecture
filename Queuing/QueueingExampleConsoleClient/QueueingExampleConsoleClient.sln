@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueingExampleConsoleClient", "QueueingExampleConsoleClient.csproj", "{55751CB7-6F98-4CC2-9A1A-6A9019BA192F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueingExampleConsoleClient", "QueueingExampleConsoleClient.csproj", "{55751CB7-6F98-4CC2-9A1A-6A9019BA192F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queueing", "..\Queueing\Queueing.csproj", "{E6D43FAF-F8DC-4E74-9F8E-1D0F8DC976B3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueingRabbitMQ", "..\QueueingRabbitMQ\QueueingRabbitMQ.csproj", "{6282E4F4-164C-4FC2-BD2F-9F21EBD4CCE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotficationService", "..\NotficationService\NotficationService.csproj", "{A8A3E757-2E57-4AE4-A00C-ADB6989F7D8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService.Log", "..\NotificationService.Log\NotificationService.Log.csproj", "{8EB8EA54-15F3-4BA9-8603-F615C018FB0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{6282E4F4-164C-4FC2-BD2F-9F21EBD4CCE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6282E4F4-164C-4FC2-BD2F-9F21EBD4CCE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6282E4F4-164C-4FC2-BD2F-9F21EBD4CCE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8A3E757-2E57-4AE4-A00C-ADB6989F7D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8A3E757-2E57-4AE4-A00C-ADB6989F7D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8A3E757-2E57-4AE4-A00C-ADB6989F7D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8A3E757-2E57-4AE4-A00C-ADB6989F7D8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB8EA54-15F3-4BA9-8603-F615C018FB0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB8EA54-15F3-4BA9-8603-F615C018FB0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB8EA54-15F3-4BA9-8603-F615C018FB0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB8EA54-15F3-4BA9-8603-F615C018FB0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

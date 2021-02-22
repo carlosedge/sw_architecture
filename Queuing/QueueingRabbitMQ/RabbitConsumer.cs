@@ -1,4 +1,5 @@
 ﻿using Queueing.Interfaces;
+using QueueingRabbitMQ.Handlers;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
@@ -8,6 +9,8 @@ namespace QueueingRabbitMQ
 {
     public class RabbitConsumer : IConsumer
     {
+        private readonly IRabbitBasicConsumerHandler _consumerHandler;
+
         public void Consume(string channelName)
         {
             Console.WriteLine(" Press [enter] to exit.");
@@ -25,9 +28,7 @@ namespace QueueingRabbitMQ
                     var consumer = new EventingBasicConsumer(channel);
                     consumer.Received += (model, ea) =>
                     {
-                        var body = ea.Body.ToArray();
-                        var message = Encoding.UTF8.GetString(body);
-                        Console.WriteLine($" [{channelName}] {message}" );
+                        _consumerHandler.Handle(channelName, model, ea);                        
                     };
                     channel.BasicConsume(queue: channelName,
                                          autoAck: true,
